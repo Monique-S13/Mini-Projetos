@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #9786a5; */
+    background: #edddfa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* background: #edddfa; */
+    background: #9c78b9;
+}
+
+section, figure, form{
+    border-radius: 30px;
+}
+
+#container-figure-cadastrar, #container-login-figure{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+}
+
+#slide{
+    width: 45%;
+    height: 92%;
+    position: absolute;
+    background-image: url("img/img1.jfif");
+    background-size: cover;
+    background-position: center;
+    left: 5%;
+    transition: left 0.5s ease;
+}
+
+#slide.mover{
+    left: 50%;
+    background-image: url("img/img2.jfif");
+}
+
+form{
+    background: #f4e6fa;
+   /* background: #f6f4f4; */
+   padding: 25px 15px 25px 15px;
+   width: 350px;
+   height: 400px;
+}
+
+form fieldset{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    border: none;
+}
+
+legend{
+    font-size: 45px;
+    text-align: center;
+    color: #594669;
+}
+
+fieldset div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+#permissoes{
+    align-self: flex-start;
+    padding-left: 40px;
+}
+
+.input{
+    width: 250px;
+    height: 35px;
+    border-radius: 12px;
+    border: none;
+    padding: 17px;
+    /* background: #f4e6fa; */
+    /* background: #f6f4f4; */
+    background: #e9d9f2;
+}
+
+.input:focus{
+    outline: 2px solid #9c78b9;
+}
+
+.input, #esqueceu_senha, button, 
+#cadastro{
+    font-size: 15px;
+    cursor: pointer;
+    color:#896aa3;
+}
+
+#cadastro, #esqueceu_senha{
+    border: none;
+    background: none;
+}
+
+#esqueceu_senha{
+    align-self: flex-end; /* alinhamento individual do elemento para o final, para direita */
+    font-weight: 600;
+}
+
+#esqueceu_senha:hover{
+    text-decoration: underline;
+}
+
+#esqueceu_senha:hover, 
+#cadastro:hover{
+    color: #594669;
+}
+
+div p input{
+    margin-right: 5px;
+}
+
+#btn_entrar, #btn_cadastrar{
+    width: 240px;
+    height: 35px;
+    border-radius: 12px;
+    background: #594669;
+    border: none;
+    color: #f4e6fa;
+    transition: all 0.1s ease;
+}
+
+#btn_entrar:hover, #btn_cadastrar:hover{
+    /* background: #e9d9f2; */
+    background: #9c78b9;
+}
+
+fieldset p, #cadastro{
+  
+  /* bottom: -90px; */
+  color:#896aa3;
+  font-weight: 600;
+}
+
+.sumir{
+    display: none;
+    transition: left 0.5s ease;
+}

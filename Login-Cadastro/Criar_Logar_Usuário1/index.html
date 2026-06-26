@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- STYLE -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <figure id="slide">
+            <!-- <img src="img/Background.jfif" alt=""> -->
+        </figure>
+        <div id="container-figure-cadastrar">
+            <form id="form_cadastro" class="sumir" action="" method="get">
+                <fieldset>
+                    <legend>Criar Login</legend>
+
+                    <div>
+                        <input type="text" id="usuario" class="input" placeholder="Nome Completo"  name="usuario" riquired>
+                        
+                        <input type="email" class="input"  id="email" placeholder="E-mail" name="email" riquired>
+                        
+                        <input type="password" id="senha" placeholder="Senha" class="input" name="senha" riquired>
+                    </div>
+    
+                    <div id="permissoes">
+                        <p><input type="checkbox" id="perm1" name="permissao1" riquired>lorem ipson</p>
+                        <p><input type="checkbox" id="perm2" name="permissao2" riquired>lorem <a href="#">ipson</a></p>
+                    </div>
+                    <button id="btn_cadastrar" type="submit" name="btn_cadastrar">Cadastre-se</button>    
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="container-login-figure">
+            <form id="form_logar" action="" method="get">
+                <fieldset> <!-- é usado para agrupar elementos-->
+                    <legend>Fazer Login</legend>
+
+                    <div>
+                        <input type="email" id="email" class="input"  name="email" placeholder="E-mail" riquired>
+                        
+                        <input type="password" id="senha" class="input"  name="senha" placeholder="Senha" riquired>
+                        
+                    </div>
+
+                    <button id="esqueceu_senha" type="button">Esqueceu a senha?</button>
+                    <button id="btn_entrar" type="submit" name="btn_entrar">Entrar</button>
+                <p>Não tem cadastro? <button id="cadastro" type="button">Cadastre-se</button></p>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</html>
