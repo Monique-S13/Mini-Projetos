@@ -5,7 +5,7 @@ const formL = document.getElementById("form_logar");
 
 const slide = document.getElementById("slide");
 
-
+// EVENTO DE CLIQUE FORMULÁRIO DE LOGIN
 linkC.addEventListener('click', () => {
     formL.classList.toggle("sumir");
     formC.classList.toggle("sumir");
@@ -13,6 +13,7 @@ linkC.addEventListener('click', () => {
     slide.classList.toggle("mover");
 });
 
+// EVENTO DE CLIQUE FORMULÁRIO DE CADASTRO
 const btnC = document.getElementById("btn_cadastrar");
 
 btnC.addEventListener('click', () => {
@@ -22,6 +23,7 @@ btnC.addEventListener('click', () => {
     slide.classList.toggle("mover");
 });
 
+// EVENTO DE CLIQUE DO BOTÃO ESQUECEU A SENHA
 const btnE = document.getElementById("esqueceu_senha");
 
 btnE.addEventListener('click', () => {
